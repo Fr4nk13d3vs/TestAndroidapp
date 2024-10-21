@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Formulario">
+
+    <TextView
+        android:id="@+id/lblTituloFormulario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Formulario"
+        android:textAlignment="center"
+        android:textColor="#F44336"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblTituloFormulario"
+        app:srcCompat="@drawable/perfil"
+        tools:srcCompat="@drawable/perfil" />
+
+    <LinearLayout
+        android:layout_width="394dp"
+        android:layout_height="569dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:layout_editor_absoluteX="8dp">
+
+        <TextView
+            android:id="@+id/lblNombre"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Nombres:"
+            android:textColor="#3F51B5"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/txtNombres"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:hint="Favor ingresar ambos nombres."
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/lblApellidos"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Apellidos:"
+            android:textColor="#3F51B5"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/txtApellidos"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:hint="Favor ingresar ambos apellidos."
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/lblGenero"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Genero:"
+            android:textColor="#3F51B5"
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rbMasculino"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Masculino" />
+
+            <RadioButton
+                android:id="@+id/rbFemenino"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Femenino" />
+
+            <RadioButton
+                android:id="@+id/rbNR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No responde" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/lblCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Correo electronico:"
+            android:textColor="#3F51B5"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/txtCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Favor ingresar correo."
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/lblOferta"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Desea recibir publicidad?"
+            android:textColor="#3F51B5"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/cbOferta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Si, deseo recibir publicidad." />
+
+        <Button
+            android:id="@+id/btnSubirForm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="MostrarDatos"
+            android:text="Subir formulario" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
