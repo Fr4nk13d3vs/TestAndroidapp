@@ -27,5 +27,6 @@ public class FormularioResultado extends AppCompatActivity {
         Correo.setText(Datos.getString("Correo"));
         genero.setText(Datos.getString("Genero"));
         Oferta.setText(Datos.getString("Oferta"));
+        //Este es un comentario
     }
 }
